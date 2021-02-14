@@ -1,5 +1,5 @@
 # like-queue
-![npm_package_badge](https://img.shields.io/badge/npm%20package-v0.1.1-blue)
+![npm_package_badge](https://img.shields.io/badge/npm%20package-v0.2.0-blue)
 ![license_badge](https://img.shields.io/github/license/woorim960/like-queue)
 
 
@@ -33,12 +33,13 @@ queue.enqueue("two");
 queue.enqueue({ three: 3 });
 
 queue.length; // 3
+queue.getElements(); // [1, "two", { three: 3 }]
 
 queue.dequeue(); // 1
 queue.dequeue(); // "two"
-queue.dequeue(); // { three: 3 }
 
-queue.length; // 0
+queue.length; // 1
+queue.getElements(); // [{ three: 3 }]
 
 ```
 
@@ -48,6 +49,7 @@ queue.length; // 0
 * <a href="#length"><code>queue#<b>length</b></code></a>
 * <a href="#enqueue"><code>queue#<b>enqueue()</b></code></a>
 * <a href="#dequeue"><code>queue#<b>dequeue()</b></code></a>
+* <a href="#getElements"><code>queue#<b>getElements()</b></code></a>
 
 -------------------------------------------------------
 <a name="new-Queue"></a>
@@ -89,6 +91,27 @@ queue.enqueue(1);
 
 ```js
 queue.dequeue(); // zero(0) index's element
+```
+
+-------------------------------------------------------
+<a name="pop"></a>
+### queue.pop()
+
+큐에 원소(`element`)를 **삭제** 할 수 있습니다.  
+마지막 원소(`element`)를 **반환** 합니다.
+
+```js
+queue.pop(); // last index's element
+```
+
+-------------------------------------------------------
+<a name="getElements"></a>
+### queue.getElements()
+
+큐의 모든 원소들(`elements`)을 **반환** 합니다.
+
+```js
+queue.getElements(); // all elements
 ```
 
 
