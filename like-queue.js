@@ -22,3 +22,5 @@ class LikeQueue {
     return firstElement;
   }
 }
+
+module.exports = LikeQueue;
