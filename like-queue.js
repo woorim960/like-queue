@@ -10,6 +10,10 @@ class LikeQueue {
     this.#queue = [];
   }
 
+  getElements() {
+    return this.#queue.slice(this.#idx);
+  }
+
   enqueue(el) {
     this.#queue.push(el);
     this.length++;
@@ -22,8 +26,9 @@ class LikeQueue {
     return firstElement;
   }
 
-  getElements() {
-    return this.#queue;
+  pop() {
+    this.length--;
+    return this.#queue.pop();
   }
 }
 
