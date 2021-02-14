@@ -21,6 +21,10 @@ class LikeQueue {
     this.#idx++;
     return firstElement;
   }
+
+  getElements() {
+    return this.#queue;
+  }
 }
 
 module.exports = LikeQueue;
