@@ -49,6 +49,7 @@ queue.getElements(); // [{ three: 3 }]
 * <a href="#length"><code>queue#<b>length</b></code></a>
 * <a href="#enqueue"><code>queue#<b>enqueue()</b></code></a>
 * <a href="#dequeue"><code>queue#<b>dequeue()</b></code></a>
+* <a href="#pop"><code>queue#<b>pop()</b></code></a>
 * <a href="#getElements"><code>queue#<b>getElements()</b></code></a>
 
 -------------------------------------------------------
