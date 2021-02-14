@@ -1,5 +1,5 @@
 # like-queue
-![npm_package_badge](https://img.shields.io/badge/npm%20package-v0.2.0-blue)
+![npm_package_badge](https://img.shields.io/badge/npm%20package-v0.2.2-blue)
 ![license_badge](https://img.shields.io/github/license/woorim960/like-queue)
 
 
