@@ -59,6 +59,7 @@ queue.getElements(); // [{ three: 3 }]
 새로운 **Queue** 인스턴스를 **생성** 합니다.
 
 ```js
+const Queue = require('like-queue');
 const queue = new Queue();
 ```
 
